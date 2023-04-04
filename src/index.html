@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ihor Bobulych">
+    <meta name="description" content="A top-down racer game for the JavaScript course">
+    <meta name="keywords" content="top-down racer, simple game, car game, javascript simple game, js car game, car game in browser">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Top-Down Racer. A Simple Car Game </title>
+</head>
+<body>
+    <div class="carGame">
+        <div class="score hide"></div>
+        <div class="startScreen">
+            <p>
+               Use <span class="important">Arrow keys</span> to move <br>
+               Use <span class="important">Escape</span> to pause a game<br>
+               If you hit an obstacle you will lose.  
+            </p>
+            <div>
+                <span class="level">
+                        Select Level
+                        <button id="easy">Easy</button>
+                        <button id="moderate">Moderate</button>
+                        <button id="difficult">Difficult</button>
+                    </span>
+            </div>
+        </div>
+        <div class="gameArea"></div>
+    </div>
+    <h1 class="pause hide">PAUSE</h1>
+    <script src="./index.js"></script>
+</body>
+</html>

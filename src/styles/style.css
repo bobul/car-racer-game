@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{margin: 0; padding: 0; font-family: 'Poppins', sans-serif;}
+body{
+    background-color: black;
+}
+        .hide{display: none;}
+        .carGame{
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .car, .obstacle{
+            width: 50px;
+            height: 25px;
+            position: absolute;
+            bottom: 120px;
+            background-image: url('../images/car.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .car{
+            transform: rotate(-90deg);
+        }
+        .obstacle{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/bush.png);
+        }
+        .roadLines{
+            width: 10px;
+            height: 100px;
+            position: absolute;
+            background: white;
+            margin-left: 195px;
+            box-shadow: 0 0 .2rem #fff;
+        }
+        .gameArea{
+            width: 400px;
+            height: 100vh;
+            /* background: #2d3436; */
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            border-right: 7px dashed #c8d6e5;
+            border-left: 7px dashed #c8d6e5;
+        }
+        .score{
+            height: 50px;
+            padding-top: 1rem;
+            position: absolute;
+            top: 15px;
+            left: 40px;
+            width: 300px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #fff;
+            box-shadow: 0 0 .2rem #fff;
+        }
+        .startScreen{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 1;
+            text-align: center;
+            padding: 3rem;
+            line-height: 2.5;
+            margin: auto;
+            width: 50%;
+            letter-spacing: 5;
+            font-size: 20px;
+            line-height: 30px;
+            text-transform: uppercase;
+            box-shadow: 0 0 .2rem #fff;
+            background-color: black;
+            cursor: pointer;
+        }
+        .startScreen p{
+            margin-bottom: 2rem;
+            text-shadow: 3px 2px 10px #ccc;
+        }
+        .level button {
+            background: none;
+            color: white;
+            padding: 7px 4px;
+            font-size: 14px;
+            border-radius: 10px;
+            width: 80px;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 0 .2rem #fff;
+            margin-left: 1rem;
+        }
+        .level button:hover{
+            text-decoration: underline;
+        }
+        .tableDiv{
+            color: white;
+            background-color: black;
+            width: 100%;
+
+        }
+        .tableDiv table{
+            border: 1px solid white;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .tableDiv tr{
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .tableDiv th,td{
+            border: 1px solid white;
+            padding: 10px 10px 0;
+        }
+        .tableDiv h1{
+            text-align: center;
+            margin-top: 4rem;
+            margin-bottom: 1rem;
+        }
+        .pause{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            font-size: 10rem;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 3px 2px 10px #ccc;
+        }
+        .important{
+            color: red;
+        }
+        #gameOver{
+            color: tomato;
+            text-decoration: none;
+        }
+        #gameOver:hover{
+            text-decoration: underline;
+        }
+        
